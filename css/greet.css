@@ -1,0 +1,231 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.parentContainer {
+    background-color: lightgrey;
+    -webkit-display: flex;
+    -moz-display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.container {
+    background-color: #fff;
+    height: 500px;
+    width: 500px;
+    -webkit-box-shadow: 1.3px 1.4px 0.4px black;
+    -moz-box-shadow: 1.3px 1.4px 0.4px black;
+    box-shadow: 1.3px 1.4px 0.4px black;
+    position: relative;
+    overflow: hidden;
+}
+
+form {
+    display: inline-block;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 30%;
+    font-family: sans-serif;
+}
+
+.input {
+    -webkit-display: flex;
+    -moz-display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+input {
+    border: 1px solid green;
+    transition: 300ms ease-in-out;
+}
+
+input:focus {
+    border: 1px solid steelblue;
+}
+
+.radioButtons {
+    -webkit-display: flex;
+    -moz-display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.buttonField {
+    -webkit-display: flex;
+    -moz-display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+#greetMe {
+    width: 100px;
+    margin: 10px 50px;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    flex: 1;
+}
+
+#greetMe {
+    background-color: #70cc14;
+    border: 1px solid #70cc14;
+    width: 120px;
+    height: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 0.4em;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px grey;
+    -webkit-box-shadow: 2px 2px 2px grey;
+    -moz-box-shadow: 2px 2px 2px grey;
+    transition: 300ms ease-in-out;
+    -webkit-transition: 300ms ease-in-out;
+    -moz-transition: 300ms ease-in-out;
+    left: 0;
+    top: 0;
+}
+
+#greetMe:hover {
+    box-shadow: 0px 0px 0px grey, 0px 0px 0px grey;
+    -webkit-box-shadow: 0px 0px 0px grey, 0px 0px 0px grey;
+    -moz-box-shadow: 0px 0px 0px grey, 0px 0px 0px grey;
+    background-color: #008000;
+    left: 5px;
+    top: 20px;
+}
+
+#resetMe {
+    width: 100px;
+    margin: 10px 50px;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    flex: 1;
+}
+
+#resetMe {
+    background-color: indianred;
+    border: 1px solid indianred;
+    width: 120px;
+    height: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 0.4em;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px grey;
+    transition: 300ms ease-in-out;
+    left: 0;
+    top: 0;
+    -webkit-box-shadow: box-shadow: 2px 2px 2px grey;
+    -webkit-transition: 300ms ease-in-out;
+}
+
+#resetMe:hover {
+    box-shadow: 0px 0px 0px grey, 0px 0px 0px grey;
+    -webkit-box-shadow: 0px 0px 0px grey, 0px 0px 0px grey;
+    -moz-box-shadow: 0px 0px 0px grey, 0px 0px 0px grey;
+    background-color: darkred;
+    left: 5px;
+    top: 20px;
+}
+
+.greeting {
+    width: 300px;
+    height: 50px;
+    background-color: steelblue;
+    margin: 30px 100px;
+    color: #fff;
+    border-radius: 0.5em;
+    position: relative;
+    font-family: serif;
+    text-align: center;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    display: flex;
+    -webkit-display: flex;
+    -moz-display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    ;
+    transform-origin: bottom left;
+    -webkit-transform-origin: bottom left;
+    -moz-transform-origin: bottom left;
+    animation: greetingAnim 1s ease-in-out;
+    -webkit-animation: greetingAnim 1s ease-in-out;
+    -moz-animation: greetingAnim 1s ease-in-out;
+}
+
+@keyframes greetingAnim {
+    0%,
+    50% {
+        transform: scale(0) rotateX(-10deg);
+    }
+    75% {
+        transform: scaleX(1.2) rotateX(10deg);
+        ;
+    }
+    100% {
+        transform: scale(1) rotateX(0deg);
+    }
+}
+
+.greeting>p {
+    font-size: 14px;
+    position: relative;
+    height: 70%;
+    width: 100%;
+    margin: -6px 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.heading {
+    background-color: steelblue;
+    width: 100%;
+    height: 50px;
+    margin: 0 0 70px;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.counter {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    -webkit-display: flex;
+    -moz-display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter>p {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 4px black;
+    text-align: center;
+}
