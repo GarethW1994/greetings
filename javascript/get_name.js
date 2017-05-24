@@ -1,8 +1,8 @@
 console.log('get_name loaded');
 
-function user (name) {
+function user(name) {
   //save the user name in a variable
-  var name = userName.value;
+  var userName = name;
 
   return name;
 }

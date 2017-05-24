@@ -1,27 +1,15 @@
 console.log('get_language loaded');
 
 //Get Radio Buttons values
-function getRadioValue(radioButtons) {
+function get_language(radioVal) {
+
     //languages arrray
-    var languages = ["Hello", "Groete", "Molo"];
-
-    //empty variable to store selected language preference
-    var lang = "";
-
-    //determine which language was selected
-    for (var i = 0; i < radioButtons.length; i++) {
-        if (radioButtons[i].checked) {
-            //save the selected language in 'lang' variable
-            lang = radioButtons[i].value;
-        }
-    }
+    var languages = ["Hello", "Goeie Dag", "Molo"];
 
     //Return the correct greeting based on language preference
-    if (lang === 'English') {
+    if (radioVal === 'English') {
         return languages[0];
-    }
-
-    if (lang === 'Afrikaans') {
+    } else if (radioVal === 'Afrikaans') {
         return languages[1];
     } else {
         return languages[2];

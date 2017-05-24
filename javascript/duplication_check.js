@@ -13,7 +13,7 @@ function greetedBefore(userName, list) {
         }
 
         //check for name
-        if (namesGreeted[i] === userName) {
+        if (list[i] === userName) {
             bool = true;
         } else {
             bool = false;

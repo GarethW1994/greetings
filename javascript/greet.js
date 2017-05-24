@@ -29,15 +29,17 @@ window.onload = function() {
 //greetMe button click
 buttonGreet.addEventListener("click", function() {
 
-    //get the language radio button from function
-    var language = getRadioValue(radioButtons);
+    //get the radio button value from function
+    var radio = getRadioValue(radioButtons);
+
+    //determine the language
+    var language = get_language(radio);
 
     //call function storing name
-    var name = user(userName);
+    var name = user(userName.value);
 
     //call function generating the greeting message
     var getGreeting = createGreeting(name, language);
-
 
     //call function that displays message to DOM
     displayGreeting(output, getGreeting);
