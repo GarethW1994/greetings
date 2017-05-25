@@ -6,7 +6,7 @@
 
 
   function pushNameToArray(name, result) {
-  //check if name is in array
+  //check the given result and add name to the array
     if (result < 0) {
         namesGreeted.push(name);
 

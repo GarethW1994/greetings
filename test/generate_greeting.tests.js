@@ -1,6 +1,6 @@
 
 
-describe('generateGreeting', function() {
+describe('generateGreeting()', function() {
 
     it("should return 'Hello, Gareth'", function() {
       var greeting = createGreeting('Gareth', 'Hello');
