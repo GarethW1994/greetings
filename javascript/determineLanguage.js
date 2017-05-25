@@ -15,7 +15,6 @@ function getRadioValue(radioButtons) {
   return value;
 }
 
-
 //Get Radio Buttons values
 function getLanguage(radioVal) {
 

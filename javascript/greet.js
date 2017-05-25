@@ -13,7 +13,6 @@
   //userName object
   var namesGreeted = [];
 
-
   //on load function
   window.onload = function() {
     //Call the check function state function
@@ -32,7 +31,6 @@
     //call main function
     mainFunction(namesGreeted);
   }, false);
-
 
   //resetMe button click
   buttonReset.addEventListener("click", function() {

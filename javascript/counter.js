@@ -15,14 +15,13 @@
 
         } else {
 
-          
+
           //increment the counter
           newCounter++;
           //save the new counter value to localStorage
           localStorage.counter = newCounter;
       }
   }
-
 
   //reset counter
   function resetCounter(counter) {

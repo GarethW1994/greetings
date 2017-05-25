@@ -1,4 +1,3 @@
-
 function user (name) {
   //save the user name in a variable
   var userName = name;
